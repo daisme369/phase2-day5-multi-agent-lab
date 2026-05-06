@@ -1,0 +1,58 @@
+[
+  {
+    "name": "supervisor_decision",
+    "payload": {
+      "next_route": "researcher",
+      "iteration": 1,
+      "has_research": false,
+      "has_analysis": false,
+      "has_answer": false
+    }
+  },
+  {
+    "name": "researcher_complete",
+    "payload": {
+      "source_count": 5,
+      "notes_length": 3362
+    }
+  },
+  {
+    "name": "supervisor_decision",
+    "payload": {
+      "next_route": "analyst",
+      "iteration": 2,
+      "has_research": true,
+      "has_analysis": false,
+      "has_answer": false
+    }
+  },
+  {
+    "name": "analyst_complete",
+    "payload": {
+      "analysis_length": 3136
+    }
+  },
+  {
+    "name": "supervisor_decision",
+    "payload": {
+      "next_route": "writer",
+      "iteration": 3,
+      "has_research": true,
+      "has_analysis": true,
+      "has_answer": false
+    }
+  },
+  {
+    "name": "writer_complete",
+    "payload": {
+      "answer_length": 4377,
+      "word_count": 518
+    }
+  },
+  {
+    "name": "critic_complete",
+    "payload": {
+      "review_length": 1445
+    }
+  }
+]
