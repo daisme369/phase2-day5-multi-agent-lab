@@ -14,7 +14,7 @@ from multi_agent_research_lab.core.state import ResearchState
 from multi_agent_research_lab.evaluation.benchmark import run_benchmark
 from multi_agent_research_lab.evaluation.report import render_markdown_report
 from multi_agent_research_lab.graph.workflow import MultiAgentWorkflow
-from multi_agent_research_lab.observability.logging import configure_logging
+from multi_agent_research_lab.observability.logger_setup import configure_logging
 from multi_agent_research_lab.observability.tracing import trace_span, export_trace_json
 from multi_agent_research_lab.services.llm_client import LLMClient
 from multi_agent_research_lab.services.storage import LocalArtifactStore
